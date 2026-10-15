@@ -1,0 +1,25 @@
+Global:
+  batch_size: 1
+  cpu_num_threads: 2
+
+PreProcess:
+  transform_ops:
+    - ResizeImage:
+        resize_short: 128
+    - CropImage:
+        size: 112
+    - NormalizeImage:
+        scale: 0.00392157 
+        mean: [0.485, 0.456, 0.406] 
+        std: [0.229, 0.224, 0.225]   
+        order: ""
+        channel_num: 3
+    - ToCHWImage:
+
+PostProcess:
+  main_indicator: Topk
+  Topk:
+    topk: 1
+    class_id_map_file: "./label_list.txt" 
+  SavePreLabel:
+    save_dir: ./pre_label/
