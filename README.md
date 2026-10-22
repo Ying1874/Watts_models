@@ -8,6 +8,7 @@
 - 模型权重及压缩包由 Git LFS 管理。克隆仓库前请先安装 Git LFS，并执行 `git lfs install`。
 - 某些版本仅更新 PicoDet 或 Clas。部署完整模型时，需要同时确认两类模型实际使用的版本。
 - 近期版本的数据变更见 [MODEL_VERSION_NOTES.md](MODEL_VERSION_NOTES.md)。
+- 模型验证、指标判定和等级划分统一按照 [MODEL_VALIDATION_STANDARD.md](MODEL_VALIDATION_STANDARD.md) 执行。
 
 ## 模型版本索引
 
