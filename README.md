@@ -8,7 +8,7 @@
 - 模型权重及压缩包由 Git LFS 管理。克隆仓库前请先安装 Git LFS，并执行 `git lfs install`。
 - 某些版本仅更新 PicoDet 或 Clas。部署完整模型时，需要同时确认两类模型实际使用的版本。
 - 近期版本的数据变更见 [MODEL_VERSION_NOTES.md](MODEL_VERSION_NOTES.md)。
-- 模型验证、指标判定和等级划分统一按照 [MODEL_VALIDATION_STANDARD.md](MODEL_VALIDATION_STANDARD.md) 执行。
+- 模型测试结果、现场覆盖范围和适用边界见 [MODEL_VALIDATION_STANDARD.md](MODEL_VALIDATION_STANDARD.md)。
 
 ## 模型版本索引
 
@@ -43,10 +43,14 @@
 | `261013` | 2026-10-13 | PicoDet、Clas | 北京全黑前后盖数据 1,091 张 |
 | `261014` | 2026-10-14 | PicoDet | 北京全黑前后盖数据 412 张 |
 | `261015` | 2026-10-15 | PicoDet | 北京全黑前后盖数据 443 张 |
+| `261016` | 2026-10-16 | PicoDet | 新增目标检测模型，训练数据变更待补充 |
+| `261026` | 2026-10-26 | Clas | 新增分类模型，训练数据变更及测试结果待补充 |
 
 ## 近期完整模型组合
 
-截至 `261015`，目录中的最新模型组合为：
+截至 `261026`，目录中各类模型的最新归档版本为：
 
-- PicoDet：`261015/picodet`
-- Clas：`261013/clas`
+- PicoDet：`261016/picodet`
+- Clas：`261026/clas`
+
+以上为归档版本组合；两者配套部署前仍需完成联合验证。
